@@ -1,0 +1,23 @@
+# 构建产物（最重要：整个 build 目录都不提交）
+/build*/
+*_autogen/
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+
+# Qt Creator 个人配置（每人不同，不提交）
+CMakeLists.txt.user*
+*.user
+
+# 编译/生成的中间文件
+*.o
+*.obj
+moc_*.cpp
+ui_*.h
+qrc_*.cpp
+*.exe
+*.dll
+
+# 系统杂项
+Thumbs.db
+.DS_Store
