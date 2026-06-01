@@ -11,6 +11,10 @@ qt_add_executable(limchat
     mainwindow.cpp
     mainwindow.h
     mainwindow.ui
+    singleton.h
+    global.h
+    global.cpp
+
 )
 
 target_link_libraries(limchat
