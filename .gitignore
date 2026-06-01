@@ -1,5 +1,5 @@
 # 构建产物（最重要：整个 build 目录都不提交）
-/build*/
+build*/
 *_autogen/
 CMakeCache.txt
 CMakeFiles/
