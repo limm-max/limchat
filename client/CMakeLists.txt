@@ -2,11 +2,12 @@ cmake_minimum_required(VERSION 3.19)
 project(limchat LANGUAGES CXX)
 
 find_package(Qt6 6.5 REQUIRED COMPONENTS Core Widgets)
-
+set(CMAKE_AUTORCC ON)
 qt_standard_project_setup()
 
 qt_add_executable(limchat
     WIN32 MACOSX_BUNDLE
+    app.rc
     main.cpp
     mainwindow.cpp
     mainwindow.h
@@ -14,8 +15,22 @@ qt_add_executable(limchat
     singleton.h
     global.h
     global.cpp
+    timerbutton.h timerbutton.cpp
+    clickedlabel.h clickedlabel.cpp
+    logindialog.h logindialog.cpp logindialog.ui
+    registerdialog.h registerdialog.cpp registerdialog.ui
+    resetdialog.h resetdialog.cpp resetdialog.ui
+    rc.qrc
+
+
+
+
+
 
 )
+
+
+target_include_directories(limchat PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
 
 target_link_libraries(limchat
     PRIVATE
