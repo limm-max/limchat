@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.19)
 project(limchat LANGUAGES CXX)
 
-find_package(Qt6 6.5 REQUIRED COMPONENTS Core Widgets)
+find_package(Qt6 6.5 REQUIRED COMPONENTS Core Widgets UiTools Network)
 set(CMAKE_AUTORCC ON)
 qt_standard_project_setup()
 
@@ -21,6 +21,7 @@ qt_add_executable(limchat
     registerdialog.h registerdialog.cpp registerdialog.ui
     resetdialog.h resetdialog.cpp resetdialog.ui
     rc.qrc
+    testdialog.ui
 
 
 
@@ -36,6 +37,8 @@ target_link_libraries(limchat
     PRIVATE
         Qt::Core
         Qt::Widgets
+        Qt::UiTools
+        Qt::Network
 )
 
 install(TARGETS limchat

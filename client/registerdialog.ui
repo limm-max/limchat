@@ -280,14 +280,14 @@
  </widget>
  <customwidgets>
   <customwidget>
-   <class>TimerButton</class>
-   <extends>QPushButton</extends>
-   <header>timerbutton.h</header>
-  </customwidget>
-  <customwidget>
    <class>ClickedLabel</class>
    <extends>QLabel</extends>
    <header>clickedlabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>TimerButton</class>
+   <extends>QPushButton</extends>
+   <header>timerbutton.h</header>
   </customwidget>
  </customwidgets>
  <resources/>

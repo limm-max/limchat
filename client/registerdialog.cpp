@@ -7,7 +7,7 @@ RegisterDialog::RegisterDialog(QWidget *parent)
     , ui(new Ui::RegisterDialog)
 {
     ui->setupUi(this);
-    ui->stackedWidget->setCurrentWidget(ui->page);
+    ui->stackedWidget->setCurrentWidget(ui->page);  //设置页面是第一页
 
     ui->pass_visible->setCursor(Qt::PointingHandCursor);
     ui->pass_visible->SetState("unvisible", "unvisible_hover", "",
